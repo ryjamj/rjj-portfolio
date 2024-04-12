@@ -1,0 +1,52 @@
+.contact-section {
+  width: 100%;
+  height: auto;
+  padding: 75px 0 50px 0;
+  text-align: center;
+  background-color: rgba(3, 3, 3, 45%);
+}
+
+.contact-section h2 {
+  color: white;
+}
+
+.contact-form {
+  max-width: 800px;
+  display: flex;
+  text-align: left;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: white;
+}
+
+.contact-details {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.contact-message {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.contact-message button {
+  color: #1d3d5f;
+  border: 0;
+  border-radius: 5px;
+  background-color: lightblue;
+  width: 140px;
+  height: 40px;
+  margin-top: 40px;
+  margin-left: auto;
+  text-transform: uppercase;
+  font-weight: blue;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-message button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}

@@ -1,0 +1,68 @@
+#projects-id {
+  padding: 5px;
+  margin: 5%;
+  width: 90%;
+  height: auto;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  border: solid;
+}
+
+.usarealestate-project {
+  width: 400px;
+  height: 400px;
+  background: white;
+  position: relative;
+  border-radius: 10px;
+  background-image: url("../../../assets/USARealEstatePredictionModel.png");
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.bbc-project {
+  width: 400px;
+  height: 400px;
+  background: white;
+  position: relative;
+  border-radius: 10px;
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-text {
+  position: absolute;
+  height: 65px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: white;
+  overflow: hidden;
+  transform: 0.2s;
+  padding: 20px;
+}
+
+.project-text:hover {
+  height: 175px;
+  transition: 0.3s;
+}
+
+.project-text h3 {
+  margin-top: 3px;
+}
+
+.project-button {
+  border: 5px solid lightblue;
+  border-radius: 10px;
+  width: 160px;
+  margin-bottom: 100px;
+  margin-left: 10px;
+}

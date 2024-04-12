@@ -1,0 +1,22 @@
+#experience-id {
+  padding: 5px;
+  margin: 5%;
+  width: 90%;
+  height: auto;
+  text-align: center;
+}
+
+.experience-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  border: solid;
+}
+
+.experience-container img {
+  border-style: none;
+  margin: 0 auto;
+  max-width: 440px;
+  display: block;
+}
