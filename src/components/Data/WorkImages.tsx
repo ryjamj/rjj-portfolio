@@ -1,7 +1,7 @@
 import WadEShot from "../../assets/WaDE.png";
 import WestDAATShot from "../../assets/WestDAAT.png";
 
-const Images = [
+const WorkImages = [
   {
     src: WadEShot,
     imgAlt: "img-1",
@@ -12,4 +12,4 @@ const Images = [
   },
 ];
 
-export default Images;
+export default WorkImages;

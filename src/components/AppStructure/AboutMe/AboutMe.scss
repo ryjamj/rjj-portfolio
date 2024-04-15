@@ -1,25 +1,30 @@
-.aboutme-section {
-  width: 90%;
-  max-width: 1100px;
-  height: auto;
-  background-color: white;
-  text-align: center;
-  padding: 40px 50px 70px;
-  margin: 0 auto;
-  box-shadow: 10px 10px 0px rgb(0 0 0 / 40%), -10px -10px 0px rgb(255 114 114 / 80%);
-}
-
 .aboutme-container {
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  flex-direction: column;
   flex-flow: wrap;
+  border: solid;
+  margin: 5%;
+  background-color: rgb(255, 255, 255, 0.8);
+  box-shadow: 10px 10px 0px rgb(0 0 0 / 40%), -10px -10px 0px rgb(255 114 114 / 80%);
+  h2 {
+    justify-self: center;
+  }
 }
 
 .aboutme-text {
-  height: auto;
-  width: 40%;
-  margin-left: 40px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.aboutme-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0%;
+  padding-bottom: 0%;
 }

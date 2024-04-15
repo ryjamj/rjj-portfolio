@@ -3,16 +3,29 @@ import "./AboutMe.scss";
 
 export default function AboutMe() {
   return (
-    <Box id="aboutme-id" className="aboutme-section">
+    <Box id="aboutme-id" className="aboutme-container">
       <h2>About Me</h2>
-      <Box className="aboutme-container">
-        <Box className="aboutme-text">
-          <p>
-            give a simple breakdown of your background education civil engineering, water science, to data analysis & ML career what brings you to
-            here today / goals
-          </p>
-          <p>talk about your skills: geo-spatial data, python, ml, r, web development</p>
-        </Box>
+      <Box className="aboutme-text">
+        <p>
+          Professional experience with extracting, transforming, and loading data to deliver insight and solutions for clientele. Passionate about delivering engineered visuals and web applications that produce best practice outcomes. Proven ability to quickly adapt and learn emerging technologies
+          and technical concepts.
+        </p>
+      </Box>
+      <Box className="aboutme-list">
+        <ul>
+          <li>
+            <b>Software Languages:</b> Python, SQL, R, HTML, CSS, JavaScript, React, C#
+          </li>
+          <li>
+            <b>Analytics Software</b>: Tableau{" "}
+          </li>
+          <li>
+            <b>UX & UI Design</b>: Adobe XD{" "}
+          </li>
+          <li>
+            <b>Geospatial</b>: ArcGIS Pro, ArcGIS Online{" "}
+          </li>
+        </ul>
       </Box>
     </Box>
   );

@@ -1,13 +1,13 @@
 .slider-container {
   position: relative;
-  width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
   padding: 0;
   overflow: hidden;
-  display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
   background-color: black;
 }
 
@@ -42,8 +42,8 @@
 
 .slider-container-links-small {
   position: relative;
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   padding: 0;
   border-radius: 50%;
   outline: none;
@@ -66,7 +66,7 @@
   object-fit: cover;
   height: auto;
   transform: translateX(0);
-  transition: transform 1s ease;
+  transition: transform 2s ease;
 }
 
 .slider-item-active-1 {
@@ -78,6 +78,8 @@
 }
 
 .slider-item img {
-  width: 100%;
-  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }

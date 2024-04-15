@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <Box className="footer-container">
       <Box className="copyright">This site &copy; 2024 Ryan James.</Box>
-      <Box className="social-media">
+      <Box className="social-media-list">
         <ul>
           {socialLinks.map((link) => (
             <a href={link.url} target="__blank" key={link.id}>
