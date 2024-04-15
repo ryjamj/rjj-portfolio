@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.76665551.css",
-    "main.js": "/static/js/main.0a084c78.js",
-    "static/js/453.d538b2b8.chunk.js": "/static/js/453.d538b2b8.chunk.js",
-    "static/media/WaDE.png": "/static/media/WaDE.ec1a2573bebb2af50a6a.png",
-    "static/media/BehaviorAttributes.png": "/static/media/BehaviorAttributes.11a5bc054a11d6fb1488.png",
-    "static/media/WestDAAT.png": "/static/media/WestDAAT.1787d013f8387510c36a.png",
-    "static/media/WaterUseByScenario.png": "/static/media/WaterUseByScenario.8700e8a67a09da3c0a4b.png",
-    "static/media/GoodnessOfFitPlot.png": "/static/media/GoodnessOfFitPlot.37506cec14bf365b9871.png",
-    "static/media/SocialNetworkStructure.png": "/static/media/SocialNetworkStructure.eb43481397a818939f4c.png",
-    "static/media/RyanJheadshot.png": "/static/media/RyanJheadshot.4178bcce47e23f4ab6ff.png",
-    "static/media/USARealEstatePredictionModel.png": "/static/media/USARealEstatePredictionModel.4cc9ada626993a2c2207.png",
-    "index.html": "/index.html",
-    "main.76665551.css.map": "/static/css/main.76665551.css.map",
-    "main.0a084c78.js.map": "/static/js/main.0a084c78.js.map",
-    "453.d538b2b8.chunk.js.map": "/static/js/453.d538b2b8.chunk.js.map"
+    "main.css": "/rjj-portfolio/static/css/main.01f74a42.css",
+    "main.js": "/rjj-portfolio/static/js/main.09a94501.js",
+    "static/js/453.d538b2b8.chunk.js": "/rjj-portfolio/static/js/453.d538b2b8.chunk.js",
+    "static/media/WaDE.png": "/rjj-portfolio/static/media/WaDE.ec1a2573bebb2af50a6a.png",
+    "static/media/BehaviorAttributes.png": "/rjj-portfolio/static/media/BehaviorAttributes.11a5bc054a11d6fb1488.png",
+    "static/media/WestDAAT.png": "/rjj-portfolio/static/media/WestDAAT.1787d013f8387510c36a.png",
+    "static/media/WaterUseByScenario.png": "/rjj-portfolio/static/media/WaterUseByScenario.8700e8a67a09da3c0a4b.png",
+    "static/media/GoodnessOfFitPlot.png": "/rjj-portfolio/static/media/GoodnessOfFitPlot.37506cec14bf365b9871.png",
+    "static/media/SocialNetworkStructure.png": "/rjj-portfolio/static/media/SocialNetworkStructure.eb43481397a818939f4c.png",
+    "static/media/RyanJheadshot.png": "/rjj-portfolio/static/media/RyanJheadshot.4178bcce47e23f4ab6ff.png",
+    "static/media/USARealEstatePredictionModel.png": "/rjj-portfolio/static/media/USARealEstatePredictionModel.4cc9ada626993a2c2207.png",
+    "index.html": "/rjj-portfolio/index.html",
+    "main.01f74a42.css.map": "/rjj-portfolio/static/css/main.01f74a42.css.map",
+    "main.09a94501.js.map": "/rjj-portfolio/static/js/main.09a94501.js.map",
+    "453.d538b2b8.chunk.js.map": "/rjj-portfolio/static/js/453.d538b2b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76665551.css",
-    "static/js/main.0a084c78.js"
+    "static/css/main.01f74a42.css",
+    "static/js/main.09a94501.js"
   ]
 }
