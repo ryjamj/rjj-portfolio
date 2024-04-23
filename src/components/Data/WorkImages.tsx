@@ -4,11 +4,11 @@ import WestDAATShot from "../../assets/WestDAAT.png";
 const WorkImages = [
   {
     src: WadEShot,
-    imgAlt: "img-1",
+    imgAlt: "imgw-1",
   },
   {
     src: WestDAATShot,
-    imgAlt: "img-2",
+    imgAlt: "imgw-2",
   },
 ];
 

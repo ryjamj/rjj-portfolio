@@ -56,6 +56,11 @@ export default function ImageSlider({ children }: ImageSliderProps) {
     }
   };
 
+
+  console.log("activeIndex: ", activeIndex)
+  console.log("slideDone: ", slideDone)
+  console.log("timeID: ", timeID)
+
   return (
     <Box className="slider-container" onMouseEnter={AutoPlayStop} onMouseLeave={AutoPlayStart}>
       {children.map((item, index) => {
