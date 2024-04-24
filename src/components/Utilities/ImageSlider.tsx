@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ImageSlider.scss";
 import { Box } from "@mui/material";
+import { act } from "react-dom/test-utils";
 
 interface ImageSliderProps {
   children: React.ReactNode[];
@@ -23,26 +24,6 @@ export default function ImageSlider({ children }: ImageSliderProps) {
     }
   }, [slideDone]);
 
-  const slideNext = () => {
-    setActiveIndex((val) => {
-      if (val >= children.length - 1) {
-        return 0;
-      } else {
-        return val + 1;
-      }
-    });
-  };
-
-  const slidePrev = () => {
-    setActiveIndex((val) => {
-      if (val <= 0) {
-        return children.length - 1;
-      } else {
-        return val - 1;
-      }
-    });
-  };
-
   const AutoPlayStop = () => {
     if (timeID) {
       clearTimeout(timeID);
@@ -56,16 +37,27 @@ export default function ImageSlider({ children }: ImageSliderProps) {
     }
   };
 
+  const slideNext = () => {
+    if (activeIndex >= children.length - 1) {
+      setActiveIndex(0);
+    } else {
+      setActiveIndex(activeIndex + 1);
+    }
+  };
 
-  console.log("activeIndex: ", activeIndex)
-  console.log("slideDone: ", slideDone)
-  console.log("timeID: ", timeID)
+  const slidePrev = () => {
+    if (activeIndex <= 0) {
+      setActiveIndex(children.length - 1);
+    } else {
+      setActiveIndex(activeIndex - 1);
+    }
+  };
 
   return (
     <Box className="slider-container" onMouseEnter={AutoPlayStop} onMouseLeave={AutoPlayStart}>
       {children.map((item, index) => {
         return (
-          <Box className={"slider-item slider-item-active-" + (activeIndex + 1)} key={index}>
+          <Box className={`slider-item slider-item-active-${activeIndex}`} key={index}>
             {item}
           </Box>
         );
@@ -85,7 +77,6 @@ export default function ImageSlider({ children }: ImageSliderProps) {
           );
         })}
       </Box>
-
       <button
         className="slider-btn-next"
         onClick={(e) => {

@@ -69,12 +69,20 @@
   transition: transform 2s ease;
 }
 
-.slider-item-active-1 {
+.slider-item-active-0 {
   transform: translateX(0);
 }
 
-.slider-item-active-2 {
+.slider-item-active-1 {
   transform: translateX(-100%);
+}
+
+.slider-item-active-2 {
+  transform: translateX(-200%);
+}
+
+.slider-item-active-3 {
+  transform: translateX(-300%);
 }
 
 .slider-item img {

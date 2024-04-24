@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <Box className="hero-container">
         <img src={RyanJheadershot} alt="RyanJheadershot" />
-        <h1>Hi! My name is Ryan. I work with data, machine learning and web development</h1>
+        <h1>Hi! My name is Ryan. I work with data, machine learning and web development.</h1>
     </Box>
   );
 }

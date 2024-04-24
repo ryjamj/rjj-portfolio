@@ -10,7 +10,7 @@ const socialLinks = [
     url: "https://github.com/ryjamj",
   },
   {
-    id: 1,
+    id: 2,
     icon: <LinkedInIcon />,
     url: "https://www.linkedin.com/in/ryan-james-063b339a/",
   },
