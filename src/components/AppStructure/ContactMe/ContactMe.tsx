@@ -8,7 +8,6 @@ import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
-import DialogTitle from "@mui/material/DialogTitle";
 
 export default function ContactMe() {
   const [open, setOpen] = React.useState(false);
@@ -41,11 +40,54 @@ export default function ContactMe() {
       <Grid className="contact-form">
         <form ref={form} onSubmit={sendEmail}>
           <Box className="contact-details">
-            <TextField fullWidth value={name} type="text" name="from_name" onChange={(e) => setName(e.target.value)} label="Name" placeholder="Your name" />
-            <TextField fullWidth value={email} type="email" name="from_email" onChange={(e) => setEmail(e.target.value)} label="Email" placeholder="Your email address" />
+            <TextField
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  fontFamily: "Arial",
+                  backgroundColor: "#f4f4f4",
+                },
+              }}
+              fullWidth
+              value={name}
+              type="text"
+              name="from_name"
+              onChange={(e) => setName(e.target.value)}
+              label="Name"
+              placeholder="Your name"
+            />
+            <TextField
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  fontFamily: "Arial",
+                  backgroundColor: "#f4f4f4",
+                },
+              }}
+              fullWidth
+              value={email}
+              type="email"
+              name="from_email"
+              onChange={(e) => setEmail(e.target.value)}
+              label="Email"
+              placeholder="Your email address"
+            />
           </Box>
           <Box className="contact-message">
-            <TextField fullWidth value={message} name="message" onChange={(e) => setMessage(e.target.value)} label="Message" placeholder="Your message" multiline rows={4} />
+            <TextField
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  fontFamily: "Arial",
+                  backgroundColor: "#f4f4f4",
+                },
+              }}
+              fullWidth
+              value={message}
+              name="message"
+              onChange={(e) => setMessage(e.target.value)}
+              label="Message"
+              placeholder="Your message"
+              multiline
+              rows={4}
+            />
             <Button fullWidth type="submit" endIcon={<SendIcon />} className="contact-me-button">
               Send
             </Button>
