@@ -11,7 +11,7 @@ export default function Header() {
             <a href="#aboutme-id">About Me</a>
           </li>
           <li>
-            <a href="#experience-id">Work Expereince</a>
+            <a href="#experience-id">Work Experience</a>
           </li>
           <li>
             <a href="#projects-id">Personal Projects</a>
