@@ -41,7 +41,7 @@ export default function WorkExperience() {
       <h2>Work Experience</h2>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Water Data Exchnage Program" {...a11yProps(0)} />
+          <Tab label="Water Data Exchange Program" {...a11yProps(0)} />
           <Tab label="Utah State University" {...a11yProps(1)} />
         </Tabs>
       </Box>
