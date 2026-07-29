@@ -37,7 +37,7 @@ export default function WorkExperience() {
 
   return (
     <Box id="experience-id" className="experience-container">
-      <span className="section-eyebrow">// experience</span>
+      <span className="section-eyebrow">experience</span>
       <h2>Work Experience</h2>
       <Box className="experience-tabs-wrap">
         <Tabs

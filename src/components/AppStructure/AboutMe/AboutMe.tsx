@@ -23,7 +23,7 @@ const skillGroups = [
 export default function AboutMe() {
   return (
     <Box id="aboutme-id" className="aboutme-container">
-      <span className="section-eyebrow">// about</span>
+      <span className="section-eyebrow">about</span>
       <h2>About Me</h2>
       <Box className="aboutme-text">
         <p>

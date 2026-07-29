@@ -47,7 +47,7 @@ export default function ContactMe() {
 
   return (
     <Box id="contact-id" className="contact-section">
-      <span className="section-eyebrow">// contact</span>
+      <span className="section-eyebrow">contact</span>
       <h2>Get In Touch</h2>
       <Box className="contact-form">
         <form ref={form} onSubmit={sendEmail}>

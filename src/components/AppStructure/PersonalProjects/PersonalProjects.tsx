@@ -31,7 +31,7 @@ const projects = [
 export default function PersonalProjects() {
   return (
     <Box id="projects-id" className="projects-container">
-      <span className="section-eyebrow">// projects</span>
+      <span className="section-eyebrow">projects</span>
       <h2>Personal Projects</h2>
       <Box className="projects-grid">
         {projects.map((project) => (

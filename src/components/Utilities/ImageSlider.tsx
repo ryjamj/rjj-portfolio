@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ImageSlider.scss";
 import { Box } from "@mui/material";
-import { act } from "react-dom/test-utils";
 
 interface ImageSliderProps {
   children: React.ReactNode[];
@@ -22,6 +21,7 @@ export default function ImageSlider({ children }: ImageSliderProps) {
         }, 5000)
       );
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slideDone]);
 
   const AutoPlayStop = () => {

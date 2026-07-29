@@ -20,7 +20,7 @@ export default function Hero() {
 
       <img className="hero-headshot" src={RyanJheadershot} alt="Ryan James" />
 
-      <span className="hero-eyebrow">// data systems developer</span>
+      <span className="hero-eyebrow">data systems developer</span>
       <h1>Ryan James, E.I.T.</h1>
       <p className="hero-subtitle">
         I design database architectures and streaming data pipelines that turn messy environmental data into

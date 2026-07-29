@@ -48,3 +48,8 @@ a {
 code {
   font-family: var(--font-mono);
 }
+
+.section-eyebrow::before,
+.hero-eyebrow::before {
+  content: "// ";
+}
