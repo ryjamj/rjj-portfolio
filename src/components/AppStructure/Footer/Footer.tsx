@@ -19,7 +19,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <Box className="footer-container">
-      <Box className="copyright">This site &copy; 2024 Ryan James.</Box>
+      <Box className="copyright">This site &copy; 2026 Ryan James.</Box>
       <Box className="social-media-list">
         <ul>
           {socialLinks.map((link) => (

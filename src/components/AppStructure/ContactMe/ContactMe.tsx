@@ -1,13 +1,26 @@
 import "./ContactMe.scss";
 import React, { useState, useRef } from "react";
-import { Box, TextField, Grid, Button } from "@mui/material";
+import { Box, TextField, Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import emailjs from "emailjs-com";
 
 import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
+import DialogActions from "@mui/material/DialogActions";
 import DialogContentText from "@mui/material/DialogContentText";
+
+const fieldSx = {
+  "& .MuiOutlinedInput-root": {
+    fontFamily: "var(--font-body)",
+    backgroundColor: "var(--surface)",
+    color: "var(--text-primary)",
+    "& fieldset": { borderColor: "var(--border)" },
+    "&:hover fieldset": { borderColor: "var(--accent)" },
+    "&.Mui-focused fieldset": { borderColor: "var(--accent)" },
+  },
+  "& .MuiInputLabel-root": { color: "var(--text-secondary)" },
+  "& .MuiInputLabel-root.Mui-focused": { color: "var(--accent)" },
+};
 
 export default function ContactMe() {
   const [open, setOpen] = React.useState(false);
@@ -21,12 +34,10 @@ export default function ContactMe() {
   };
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    setOpen(true);
-
     e.preventDefault();
     emailjs.sendForm("service_xicbqns", "template_pz87z9c", form.current!, "MdqOAAwT-x0lz6_-q").then(
       () => {
-        console.log("SUCCESS!");
+        setOpen(true);
       },
       (error) => {
         console.log("FAILED...", error.text);
@@ -36,17 +47,13 @@ export default function ContactMe() {
 
   return (
     <Box id="contact-id" className="contact-section">
-      <h2>Contact me...</h2>
-      <Grid className="contact-form">
+      <span className="section-eyebrow">// contact</span>
+      <h2>Get In Touch</h2>
+      <Box className="contact-form">
         <form ref={form} onSubmit={sendEmail}>
           <Box className="contact-details">
             <TextField
-              sx={{
-                "& .MuiOutlinedInput-root": {
-                  fontFamily: "Arial",
-                  backgroundColor: "#f4f4f4",
-                },
-              }}
+              sx={fieldSx}
               fullWidth
               value={name}
               type="text"
@@ -56,12 +63,7 @@ export default function ContactMe() {
               placeholder="Your name"
             />
             <TextField
-              sx={{
-                "& .MuiOutlinedInput-root": {
-                  fontFamily: "Arial",
-                  backgroundColor: "#f4f4f4",
-                },
-              }}
+              sx={fieldSx}
               fullWidth
               value={email}
               type="email"
@@ -73,12 +75,7 @@ export default function ContactMe() {
           </Box>
           <Box className="contact-message">
             <TextField
-              sx={{
-                "& .MuiOutlinedInput-root": {
-                  fontFamily: "Arial",
-                  backgroundColor: "#f4f4f4",
-                },
-              }}
+              sx={fieldSx}
               fullWidth
               value={message}
               name="message"
@@ -101,7 +98,7 @@ export default function ContactMe() {
             </Dialog>
           </Box>
         </form>
-      </Grid>
+      </Box>
     </Box>
   );
 }
