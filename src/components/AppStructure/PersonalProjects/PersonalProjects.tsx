@@ -1,6 +1,9 @@
 import "./PersonalProjects.scss";
 import { Box } from "@mui/material";
 import USARealEstateImg from "../../../assets/USARealEstatePredictionModel.png";
+import RealTimeRiverSenorAnalyticsAIAgent from "../../../assets/RealTimeRiverSenorAnalyticsAIAgent.png";
+import DontPanicLabLogo from "../../../assets/DontPanicLabLogo.png";
+
 
 const projects = [
   {
@@ -9,7 +12,7 @@ const projects = [
     description:
       "Automated Python pipeline streaming live USGS lake data into BigQuery, with a LangChain agent that translates natural-language questions into SQL, and a Streamlit dashboard to explore the results.",
     href: "https://github.com/ryjamj",
-    image: null,
+    image: RealTimeRiverSenorAnalyticsAIAgent,
   },
   {
     title: "USA Real Estate Price Prediction Model",
@@ -24,7 +27,7 @@ const projects = [
     description:
       "Sponsored by Doane University \u2014 a collaborative full-stack team project to design and build a volunteer management tool, built with agile development practices.",
     href: "https://github.com/ryjamj",
-    image: null,
+    image: DontPanicLabLogo,
   },
 ];
 
